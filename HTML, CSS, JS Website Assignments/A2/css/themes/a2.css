@@ -1,0 +1,30 @@
+/*
+  author: Jawadur Rahman (A00434830)
+
+  It is ordered starting with HTML elements, followed by id, followed by classes
+
+*/
+
+figure {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  margin-right: 0px;
+}
+
+/* id section */
+#move {
+  padding-left: 170px;
+}
+
+/* programmer defined class section */
+
+.ui-page,
+.ui-header {
+  background: #92bb94 !important;
+}
+
+.ui-btn-active {
+  background-image: radial-gradient(rgb(253, 239, 48), rgb(41, 4, 253));
+}

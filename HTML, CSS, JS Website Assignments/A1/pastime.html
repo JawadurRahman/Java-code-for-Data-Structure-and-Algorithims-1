@@ -1,0 +1,103 @@
+<!-- 
+  author: Jawadur Rahman (A00434830)
+
+  The purpose of this file is to provide the structure for the
+  displaying and hiding of the pastime images.
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table</title>
+    <meta name="viewport" content="width =device-width" />
+    <link rel="stylesheet" href="pastime.css" />
+    <script src="pastime.js"></script>
+  </head>
+
+  <body onload="setup()">
+    <h1>My Hobbies And Pastimes</h1>
+    <ol>
+      <li>Running</li>
+      <li>Reading</li>
+      <li>Chatting with Friends</li>
+    </ol>
+    <table>
+      <th colspan="2">My Hobbies and Pastimes</th>
+
+      <tr>
+        <td>ranking</td>
+        <td>picture ON/OFF</td>
+      </tr>
+      <tr>
+        <td>1</td>
+
+        <td>
+          <input
+            class="button"
+            type="button"
+            value="Running"
+            id="picOne"
+            onclick="showOrHidePictureOne()"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>
+          <input
+            class="button"
+            type="button"
+            value="Reading"
+            id="picTwo"
+            onclick="showOrHidePictureTwo()"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>
+          <input
+            class="button"
+            type="button"
+            value="Chatting"
+            id="picThree"
+            onclick="showOrHidePictureThree()"
+          />
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td>
+          <figure id="running">
+            <img
+              src="running.jpg"
+              alt="Running Vector"
+              width="280"
+              height="180"
+            />
+          </figure>
+        </td>
+        <td>
+          <img
+            id="reading"
+            src="reading.jpg"
+            alt="Reading Vector"
+            width="210"
+            height="220"
+          />
+        </td>
+        <td>
+          <figure id="chatting">
+            <img
+              src="chatting.jpg"
+              alt="Chatting vector"
+              width="280"
+              height="180"
+            />
+          </figure>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

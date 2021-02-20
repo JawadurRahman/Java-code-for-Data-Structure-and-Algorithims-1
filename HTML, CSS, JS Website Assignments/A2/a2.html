@@ -1,0 +1,74 @@
+<!-- 
+  author: Jawadur Rahman (A00434830)
+
+  The purpose of this file is to provide the structure for the
+  displaying and hiding of the plan and elevation canvases.
+ -->
+
+<!DOCTYPE html5>
+
+<html>
+  <head>
+    <title>a2.html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./css/themes/a2c.css" />
+    <link rel="stylesheet" href="./css/themes/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="./css/themes/a2.css" />
+
+    <script src="./scripts/jquery-1.11.1.min.js"></script>
+    <script src="./scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script src="./scripts/a2.js"></script>
+  </head>
+
+  <body onload="setup()">
+    <div data-role="page">
+      <div class="ui-content">
+        <div data-role="controlgroup" data-type="horizontal">
+          <div class="ui-grid-a ui-responsive">
+            <div id="move" class="ui-block-a">
+              <br />
+              <select id="images" onchange="showImages()">
+                <option value="clear">Clear</option>
+                <option value="show elevation">Show Elevation</option>
+                <option value="show plan">Show Plan</option>
+                <option value="show both">Show Both</option>
+              </select>
+            </div>
+            <div class="ui-block-b">
+              <div>
+                <figure id="a2">
+                  <img src="a2.jpg" alt="A2" width="300" height="150" />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="ui-grid-a ui-responsive">
+            <br />
+            <div class="ui-block-a">
+              <img src="elevation.jpg" alt="Elevation" />
+            </div>
+
+            <div class="ui-block-b">
+              <figure>
+                <img src="plan.jpg" alt="Plan" />
+              </figure>
+            </div>
+          </div>
+          <div class="ui-grid-a ui-responsive">
+            <br />
+            <div class="ui-block-a">
+              <canvas id="elevation" width="450" height="150"> </canvas>
+            </div>
+
+            <div class="ui-block-b">
+              <figure id="plan">
+                <canvas id="windowPlan" width="420" height="150"> </canvas>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
